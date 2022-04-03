@@ -1,0 +1,29 @@
+from tkinter import *
+from tkinter import messagebox
+
+def click():
+
+    messagebox.showinfo(title="My first messagebox", message="Go no go")
+    
+    messagebox.showwarning(title="My first messagewarning", message="Go can't go")
+    
+    messagebox.showerror(title="WARNING", message="We don't do that here! ")
+    
+    messagebox.askokcancel(title="Your choice", message="Dou you")
+    
+    messagebox.askretrycancel(title="Something went wrong", message="Do you wish tto try again")
+    
+    messagebox.askyesno(title="My first messagebox", message="Go no go")
+    
+    messagebox.askquestion(title="My first messagebox", message="Say something")
+    
+    messagebox.askyesnocancel(title="My first messagebox", message="Go no go")
+
+
+window = Tk()
+
+button = Button(text="click me", command=click)
+button.pack()
+
+window.mainloop()
+
